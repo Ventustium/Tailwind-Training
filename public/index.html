@@ -10,44 +10,54 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="./css/style.css" />
-        <style type="">
-            * {
-                border: 1px solid red;
-            }
-        </style>
     </head>
 
     <body>
-        <h1>Tailwind Tutorial!</h1>
-        <section class="mb-10">
-            <h2>Spacing</h2>
-            <div class="m-4">Margin</div>
+        <h1 class="text-6xl font-bold text-center my-10">
+            <span class="bg-gradient-to-t from-blue-100 to-red-300 bg-clip-text text-transparent">Tailwind</span
+            > Tutorial!
+        </h1>
+        <section class="mb-10 bg-indigo-50">
+            <h2 class="text-center text-3xl">Spacing</h2>
+            <div
+                class="m-4 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-300"
+            >
+                Margin
+            </div>
             <div class="p-4">Padding</div>
         </section>
 
-        <section class="mb-96">
-            <h2>Sizing</h2>
-            <div class="w-32 h-32">Kotak</div>
+        <section class="mb-40 bg-green-50">
+            <h2 class="text-center">Sizing</h2>
+            <div class="w-32 h-32 bg-red-100">Kotak</div>
             <div class="max-w-xs">Kotak 2</div>
         </section>
 
-        <section class="mb-96 font-roboto max-w-4xl mx-auto">
-            <h2 class="mb-4">Learning about Typhography on TailwindCSS</h2>
-            <div class="mb-4">By Kevin, 1 January 2024</div>
-            <p class="mb-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                similique distinctio minima quisquam necessitatibus, blanditiis
-                omnis nesciunt delectus deserunt quis officiis ullam sit
-                consectetur culpa nulla dolore aut quod veritatis eos, deleniti,
-                repellendus iusto. Inventore odio expedita cum placeat? Quae
-                consequuntur consectetur laboriosam unde maiores fuga nostrum
-                suscipit magnam laborum!
+        <section class="mb-40 font-roboto max-w-4xl mx-auto bg-kopi">
+            <h2 class="mb-4 text-4xl font-bold">
+                Learning about Typhography on TailwindCSS
+            </h2>
+            <p class="mb-4 text-lg text-gray-500">
+                By <a href="" class="text-gray-700 font-semibold">Kevin</a>, 1
+                January 2024
             </p>
             <p class="mb-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-                vel laboriosam voluptas. Aliquid omnis ab, corrupti facere ipsum
-                distinctio dolorem!
+                Lorem ipsum dolor sit amet
+                <a href="" class="underline font-semibold text-blue-600"
+                    >consectetur</a
+                >
+                adipisicing elit. Quas similique distinctio minima quisquam
+                necessitatibus, blanditiis omnis nesciunt delectus deserunt quis
+                officiis ullam sit consectetur culpa nulla dolore aut quod
+                veritatis eos, deleniti, repellendus iusto. Inventore odio
+                expedita cum placeat? Quae consequuntur consectetur laboriosam
+                unde maiores fuga nostrum suscipit magnam laborum!
             </p>
+            <blockquote class="mb-4 italic font-thin">
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dolorem vel laboriosam voluptas. Aliquid omnis ab, corrupti
+                facere ipsum distinctio dolorem!"
+            </blockquote>
             <p class="mb-4">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde
                 deleniti neque atque incidunt eos aut molestias possimus, ipsum,

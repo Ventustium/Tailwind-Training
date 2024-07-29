@@ -6,6 +6,9 @@ module.exports = {
             fontFamily: {
                 roboto: ["Roboto"],
             },
+            colors: {
+                'kopi': '#c0ffee'
+            }
         },
     },
     plugins: [],
