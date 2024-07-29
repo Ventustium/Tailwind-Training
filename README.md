@@ -2,7 +2,7 @@
 
 How to install
 ```bash
-npm install -D tailwindcss
+npm i tailwindcss
 npx tailwindcss init
 ```
 
