@@ -3,6 +3,12 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="./css/style.css" />
         <style type="">
             * {
@@ -13,10 +19,41 @@
 
     <body>
         <h1>Tailwind Tutorial!</h1>
-        <section>
+        <section class="mb-10">
             <h2>Spacing</h2>
             <div class="m-4">Margin</div>
             <div class="p-4">Padding</div>
+        </section>
+
+        <section class="mb-96">
+            <h2>Sizing</h2>
+            <div class="w-32 h-32">Kotak</div>
+            <div class="max-w-xs">Kotak 2</div>
+        </section>
+
+        <section class="mb-96 font-roboto">
+            <h2 class="mb-4">Learning about Typhography on TailwindCSS</h2>
+            <div class="mb-4">By Kevin, 1 January 2024</div>
+            <p class="mb-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+                similique distinctio minima quisquam necessitatibus, blanditiis
+                omnis nesciunt delectus deserunt quis officiis ullam sit
+                consectetur culpa nulla dolore aut quod veritatis eos, deleniti,
+                repellendus iusto. Inventore odio expedita cum placeat? Quae
+                consequuntur consectetur laboriosam unde maiores fuga nostrum
+                suscipit magnam laborum!
+            </p>
+            <p class="mb-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                vel laboriosam voluptas. Aliquid omnis ab, corrupti facere ipsum
+                distinctio dolorem!
+            </p>
+            <p class="mb-4">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde
+                deleniti neque atque incidunt eos aut molestias possimus, ipsum,
+                accusantium labore vero laborum fugiat sit assumenda quis,
+                reprehenderit maxime iste. Nostrum?
+            </p>
         </section>
     </body>
 </html>
