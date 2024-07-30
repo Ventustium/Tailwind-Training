@@ -125,9 +125,44 @@
             Save
         </button>
 
-        <div class="max-w-lg my-10 border border-slate-200 rounded-xl mx-auto p-5 shadow-md hover:bg-gray-600 group">
-            <h5 class="font-bold text-lg mb-3 group-hover:text-white">My Card</h5>
-            <p class="group-hover:text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi exercitationem sint itaque iusto debitis sunt rem nemo reprehenderit distinctio expedita.</p>
+        <div
+            class="max-w-lg my-10 border border-slate-200 rounded-xl mx-auto p-5 shadow-md hover:bg-gray-600 group select-none"
+        >
+            <h5 class="font-bold text-lg mb-3 group-hover:text-white">
+                My Card
+            </h5>
+            <p class="group-hover:text-white selection:bg-black">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum,
+                tempora. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Quasi exercitationem sint itaque iusto debitis sunt rem
+                nemo reprehenderit distinctio expedita.
+            </p>
+        </div>
+        <div
+            class="max-w-lg my-10 border border-slate-200 rounded-xl mx-auto p-5 shadow-md"
+        >
+            <label for="email">
+                <span
+                    class="block font-semibold mb-1 after:content-['*'] after:text-pink-500 after:ml-0.5"
+                    >Email</span
+                >
+                <input
+                    class="px-3 py-2 border 
+                    shadow rounded w-full block placeholder:text-slate-400 
+                    focus:outline-none 
+                    focus:ring-1 
+                    focus:ring-sky-500 
+                    focus:border-sky-500 
+                    invalid:text-pink-700 
+                    invalid:ring-pink-700 
+                    invalid:focus:border-pink-700 peer"
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email Address"
+                />
+                <p class="text-sm m-1 text-pink-700 invisible peer-invalid:visible">Invalid email</p>
+            </label>
         </div>
         <div class="mb-96"></div>
     </body>
