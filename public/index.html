@@ -124,7 +124,7 @@
             <input type="checkbox" id="toggle" class="hidden">
             <label for="toggle">
                 <div class="w-9 h-5 bg-slate-500 rounded-full flex items-center p-1 cursor-pointer">
-                    <div class="w-4 h-4 bg-white rounded-full toggle-circle"></div>
+                    <div class="w-4 h-4 bg-white rounded-full toggle-circle transition"></div>
                 </div>
             </label>
             <span class="text-sm ml-2 text-slate-500">Dark</span>
@@ -177,6 +177,17 @@
                 <p class="text-sm m-1 text-pink-700 invisible peer-invalid:visible">Invalid email</p>
             </label>
         </div>
+
+        <hr class="my-20">
+
+        <!-- Hover the moving element -->
+        <div class="w-40 h-40 mx-auto bg-sky-500 rounded-lg shadow-lg transition hover:rotate-45 hover:bg-pink-500 origin-top-left"></div>
+
+        <!-- Hover the parent element -->
+        <div class="w-40 h-40 mx-auto my-10 group">
+            <div class="h-full w-full bg-sky-500 rounded-lg shadow-lg transition group-hover:translate-x-40 group-hover:rotate-45 group-hover:bg-pink-500"></div>
+        </div>
+
         <div class="mb-96"></div>
 
         <script>
