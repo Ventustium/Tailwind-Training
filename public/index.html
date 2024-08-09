@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html class="">
     <head>
         <meta charset="UTF-8" />
@@ -13,7 +13,7 @@
     </head>
 
     <body class="dark:bg-slate-800 dark:text-slate-200">
-        <h1 class="text-6xl font-bold text-center my-10">
+        <h1 class="my-10 text-center text-6xl font-bold">
             <span
                 class="bg-gradient-to-t from-blue-100 to-red-300 bg-clip-text text-transparent"
                 >Tailwind</span
@@ -32,21 +32,21 @@
 
         <section class="mb-40 bg-green-50">
             <h2 class="text-center">Sizing</h2>
-            <div class="w-32 h-32 bg-red-100">Kotak</div>
+            <div class="h-32 w-32 bg-red-100">Kotak</div>
             <div class="max-w-xs">Kotak 2</div>
         </section>
 
-        <section class="font-roboto max-w-4xl mx-auto bg-kopi">
+        <section class="mx-auto max-w-4xl bg-kopi font-roboto">
             <h2 class="mb-4 text-4xl font-bold">
                 Learning about Typhography on TailwindCSS
             </h2>
             <p class="mb-4 text-lg text-gray-500">
-                By <a href="" class="text-gray-700 font-semibold">Kevin</a>, 1
+                By <a href="" class="font-semibold text-gray-700">Kevin</a>, 1
                 January 2024
             </p>
             <p class="mb-4">
                 Lorem ipsum dolor sit amet
-                <a href="" class="underline font-semibold text-blue-600"
+                <a href="" class="font-semibold text-blue-600 underline"
                     >consectetur</a
                 >
                 adipisicing elit. Quas similique distinctio minima quisquam
@@ -56,7 +56,7 @@
                 expedita cum placeat? Quae consequuntur consectetur laboriosam
                 unde maiores fuga nostrum suscipit magnam laborum!
             </p>
-            <blockquote class="mb-4 italic font-thin">
+            <blockquote class="mb-4 font-thin italic">
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Dolorem vel laboriosam voluptas. Aliquid omnis ab, corrupti
                 facere ipsum distinctio dolorem!"
@@ -70,9 +70,9 @@
         </section>
 
         <div
-            class="max-w-xl h-96 bg-[#bada55] mx-auto mt-[42px] overflow-y-scroll bg-fixed"
+            class="mx-auto mt-[42px] h-96 max-w-xl overflow-y-scroll bg-[#bada55] bg-fixed"
             style="
-                background-image: url('https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/3d923fcb-559c-44e7-80b4-2306b16f24c7.webp');
+                background-image: url(&quot;https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/3d923fcb-559c-44e7-80b4-2306b16f24c7.webp&quot;);
             "
         >
             <p class="p-5 text-2xl">
@@ -105,46 +105,52 @@
         </div>
 
         <div
-            class="mt-32 max-w-xl mx-auto h-96 bg-slate-300 bg-contain bg-no-repeat bg-center rounded-2xl shadow-xl shadow-green-100 bg-blend-overlay flex"
+            class="mx-auto mt-32 flex h-96 max-w-xl rounded-2xl bg-slate-300 bg-contain bg-center bg-no-repeat bg-blend-overlay shadow-xl shadow-green-100"
             style="
-                background-image: url('https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/3d923fcb-559c-44e7-80b4-2306b16f24c7.webp');
+                background-image: url(&quot;https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/3d923fcb-559c-44e7-80b4-2306b16f24c7.webp&quot;);
             "
         >
             <!-- Effect Blur -->
             <div
-                class="w-[200px] h-[200px] bg-white-300 m-auto backdrop-blur-md"
+                class="bg-white-300 m-auto h-[200px] w-[200px] backdrop-blur-md"
             ></div>
             <!-- <div class="w-full h-full bg-gray-50 mix-blend-multiply"></div> -->
         </div>
 
         <hr class="my-20" />
 
-        <div class="justify-center flex">
-            <span class="text-sm mr-2 text-slate-500">Light</span>
-            <input type="checkbox" id="toggle" class="hidden">
+        <div class="flex justify-center">
+            <span class="mr-2 text-sm text-slate-500">Light</span>
+            <input type="checkbox" id="toggle" class="hidden" />
             <label for="toggle">
-                <div class="w-9 h-5 bg-slate-500 rounded-full flex items-center p-1 cursor-pointer">
-                    <div class="w-4 h-4 bg-white rounded-full toggle-circle transition"></div>
+                <div
+                    class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1"
+                >
+                    <div
+                        class="toggle-circle h-4 w-4 rounded-full bg-white transition"
+                    ></div>
                 </div>
             </label>
-            <span class="text-sm ml-2 text-slate-500">Dark</span>
+            <span class="ml-2 text-sm text-slate-500">Dark</span>
         </div>
 
         <button
-            class="my-10 bg-sky-500 px-5 py-2 rounded-full text-white font-semibold block mx-auto hover:bg-sky-600 active:bg-sky-700 focus:ring focus:ring-sky-300
-            dark:text-slate-800 dark:bg-slate-300 dark:hover:bg-slate-400"
+            class="mx-auto my-10 block rounded-full bg-sky-500 px-5 py-2 font-semibold text-white hover:bg-sky-600 focus:ring focus:ring-sky-300 active:bg-sky-700 dark:bg-slate-300 dark:text-slate-800 dark:hover:bg-slate-400"
         >
             Save
         </button>
 
         <div
-            class="max-w-lg my-10 border border-slate-200 rounded-xl mx-auto p-5 shadow-md hover:bg-gray-600 group select-none
-            dark:bg-slate-300"
+            class="group mx-auto my-10 max-w-lg select-none rounded-xl border border-slate-200 p-5 shadow-md hover:bg-gray-600 dark:bg-slate-300"
         >
-            <h5 class="font-bold text-lg mb-3 group-hover:text-white dark:text-slate-800">
+            <h5
+                class="mb-3 text-lg font-bold group-hover:text-white dark:text-slate-800"
+            >
                 My Card
             </h5>
-            <p class="group-hover:text-white selection:bg-black dark:text-slate-800">
+            <p
+                class="selection:bg-black group-hover:text-white dark:text-slate-800"
+            >
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum,
                 tempora. Lorem ipsum dolor sit amet consectetur adipisicing
                 elit. Quasi exercitationem sint itaque iusto debitis sunt rem
@@ -152,199 +158,389 @@
             </p>
         </div>
         <div
-            class="max-w-lg my-10 border border-slate-200 rounded-xl mx-auto p-5 shadow-md"
+            class="mx-auto my-10 max-w-lg rounded-xl border border-slate-200 p-5 shadow-md"
         >
             <label for="email">
                 <span
-                    class="block font-semibold mb-1 after:content-['*'] after:text-pink-500 after:ml-0.5"
+                    class="mb-1 block font-semibold after:ml-0.5 after:text-pink-500 after:content-['*']"
                     >Email</span
                 >
                 <input
-                    class="px-3 py-2 border 
-                    shadow rounded w-full block placeholder:text-slate-400 
-                    focus:outline-none 
-                    focus:ring-1 
-                    focus:ring-sky-500 
-                    focus:border-sky-500 
-                    invalid:text-pink-700 
-                    invalid:ring-pink-700 
-                    invalid:focus:border-pink-700 peer"
+                    class="peer block w-full rounded border px-3 py-2 shadow placeholder:text-slate-400 invalid:text-pink-700 invalid:ring-pink-700 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 invalid:focus:border-pink-700"
                     type="email"
                     name="email"
                     id="email"
                     placeholder="Email Address"
                 />
-                <p class="text-sm m-1 text-pink-700 invisible peer-invalid:visible">Invalid email</p>
+                <p
+                    class="invisible m-1 text-sm text-pink-700 peer-invalid:visible"
+                >
+                    Invalid email
+                </p>
             </label>
         </div>
 
-        <hr class="my-20">
+        <hr class="my-20" />
 
         <!-- Hover the moving element -->
-        <div class="w-40 h-40 mx-auto bg-sky-500 rounded-lg shadow-lg transition hover:rotate-45 hover:bg-pink-500 origin-top-left"></div>
+        <div
+            class="mx-auto h-40 w-40 origin-top-left rounded-lg bg-sky-500 shadow-lg transition hover:rotate-45 hover:bg-pink-500"
+        ></div>
 
         <!-- Hover the parent element -->
-        <div class="w-40 h-40 mx-auto my-10 group">
-            <div class="h-full w-full bg-sky-500 rounded-lg shadow-lg transition group-hover:translate-x-40 group-hover:rotate-45 group-hover:bg-pink-500"></div>
+        <div class="group mx-auto my-10 h-40 w-40">
+            <div
+                class="h-full w-full rounded-lg bg-sky-500 shadow-lg transition group-hover:translate-x-40 group-hover:rotate-45 group-hover:bg-pink-500"
+            ></div>
         </div>
 
-        <hr class="my-20 border-t-4">
+        <hr class="my-20 border-t-4" />
 
         <div class="container mx-auto mb-20">
-            <div class="rounded-lg shadow-md p-10 relative">
-                <div class="w-10 h-10 bg-pink-400 rounded-full flex absolute -top-10 -right-10 cursor-pointer"><span class="m-auto">❌</span></div>
-                <img src="https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/3d923fcb-559c-44e7-80b4-2306b16f24c7.webp" alt=""
-                width="150"
-                class="float-left mr-4">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam atque commodi sapiente incidunt quam sit expedita eum, at magnam, officiis quas impedit, dolore optio aliquid. Quo nobis mollitia quis, officia excepturi, consequatur ullam amet molestiae voluptates illum vel aut ipsam obcaecati! Incidunt porro maiores assumenda beatae hic non debitis numquam.</p>
+            <div class="relative rounded-lg p-10 shadow-md">
+                <div
+                    class="absolute -right-10 -top-10 flex h-10 w-10 cursor-pointer rounded-full bg-pink-400"
+                >
+                    <span class="m-auto">❌</span>
+                </div>
+                <img
+                    src="https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/3d923fcb-559c-44e7-80b4-2306b16f24c7.webp"
+                    alt=""
+                    width="150"
+                    class="float-left mr-4"
+                />
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Totam atque commodi sapiente incidunt quam sit expedita eum,
+                    at magnam, officiis quas impedit, dolore optio aliquid. Quo
+                    nobis mollitia quis, officia excepturi, consequatur ullam
+                    amet molestiae voluptates illum vel aut ipsam obcaecati!
+                    Incidunt porro maiores assumenda beatae hic non debitis
+                    numquam.
+                </p>
             </div>
         </div>
 
         <div class="container mx-auto mb-20">
-            <div class="rounded-lg shadow-md p-10 relative">
-                <div class="w-10 h-10 bg-pink-400 rounded-full flex absolute -top-5 left-1/2 -translate-x-1\2 cursor-pointer"><span class="m-auto">❌</span></div>
-                <img src="https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/3d923fcb-559c-44e7-80b4-2306b16f24c7.webp" alt=""
-                width="150"
-                class="float-left mr-4">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam atque commodi sapiente incidunt quam sit expedita eum, at magnam, officiis quas impedit, dolore optio aliquid. Quo nobis mollitia quis, officia excepturi, consequatur ullam amet molestiae voluptates illum vel aut ipsam obcaecati! Incidunt porro maiores assumenda beatae hic non debitis numquam.</p>
+            <div class="relative rounded-lg p-10 shadow-md">
+                <div
+                    class="-translate-x-1\2 absolute -top-5 left-1/2 flex h-10 w-10 cursor-pointer rounded-full bg-pink-400"
+                >
+                    <span class="m-auto">❌</span>
+                </div>
+                <img
+                    src="https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/3d923fcb-559c-44e7-80b4-2306b16f24c7.webp"
+                    alt=""
+                    width="150"
+                    class="float-left mr-4"
+                />
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Totam atque commodi sapiente incidunt quam sit expedita eum,
+                    at magnam, officiis quas impedit, dolore optio aliquid. Quo
+                    nobis mollitia quis, officia excepturi, consequatur ullam
+                    amet molestiae voluptates illum vel aut ipsam obcaecati!
+                    Incidunt porro maiores assumenda beatae hic non debitis
+                    numquam.
+                </p>
             </div>
         </div>
 
         <div class="container mx-auto mb-20">
-            <div class="rounded-lg shadow-md p-10 relative">
-                <div class="w-10 h-10 bg-sky-400 rounded-full flex absolute -top-5 left-1/2 -translate-x-1\2 cursor-pointer"><span class="m-auto">🔝</span></div>
-                <img src="https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/3d923fcb-559c-44e7-80b4-2306b16f24c7.webp" alt=""
-                width="150"
-                class="float-left mr-4">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam atque commodi sapiente incidunt quam sit expedita eum, at magnam, officiis quas impedit, dolore optio aliquid. Quo nobis mollitia quis, officia excepturi, consequatur ullam amet molestiae voluptates illum vel aut ipsam obcaecati! Incidunt porro maiores assumenda beatae hic non debitis numquam.</p>
+            <div class="relative rounded-lg p-10 shadow-md">
+                <div
+                    class="-translate-x-1\2 absolute -top-5 left-1/2 flex h-10 w-10 cursor-pointer rounded-full bg-sky-400"
+                >
+                    <span class="m-auto">🔝</span>
+                </div>
+                <img
+                    src="https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/3d923fcb-559c-44e7-80b4-2306b16f24c7.webp"
+                    alt=""
+                    width="150"
+                    class="float-left mr-4"
+                />
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Totam atque commodi sapiente incidunt quam sit expedita eum,
+                    at magnam, officiis quas impedit, dolore optio aliquid. Quo
+                    nobis mollitia quis, officia excepturi, consequatur ullam
+                    amet molestiae voluptates illum vel aut ipsam obcaecati!
+                    Incidunt porro maiores assumenda beatae hic non debitis
+                    numquam.
+                </p>
             </div>
         </div>
 
-        <div class="w-10 h-10 bg-sky-400 rounded-full flex fixed bottom-5 right-5 -translate-x-1\2 cursor-pointer"><a href="#" class="m-auto">🔝</a></div>
+        <div
+            class="-translate-x-1\2 fixed bottom-5 right-5 flex h-10 w-10 cursor-pointer rounded-full bg-sky-400"
+        >
+            <a href="#" class="m-auto">🔝</a>
+        </div>
 
         <div class="container mx-auto mb-20">
-            <div class="rounded-lg shadow-md p-10 columns-3">
-                <img src="https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/3d923fcb-559c-44e7-80b4-2306b16f24c7.webp" alt="" class="float-left mr-4 mb-4">
-                <img src="https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/3d923fcb-559c-44e7-80b4-2306b16f24c7.webp" alt="" class="float-left mr-4 mb-4">
-                <img src="https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/3d923fcb-559c-44e7-80b4-2306b16f24c7.webp" alt="" class="float-left mr-4 mb-4">
-                <img src="https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/3d923fcb-559c-44e7-80b4-2306b16f24c7.webp" alt="" class="float-left mr-4 mb-4">
-                <img src="https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/3d923fcb-559c-44e7-80b4-2306b16f24c7.webp" alt="" class="float-left mr-4 mb-4">
-                <img src="https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/3d923fcb-559c-44e7-80b4-2306b16f24c7.webp" alt="" class="float-left mr-4 mb-4">
+            <div class="columns-3 rounded-lg p-10 shadow-md">
+                <img
+                    src="https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/3d923fcb-559c-44e7-80b4-2306b16f24c7.webp"
+                    alt=""
+                    class="float-left mb-4 mr-4"
+                />
+                <img
+                    src="https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/3d923fcb-559c-44e7-80b4-2306b16f24c7.webp"
+                    alt=""
+                    class="float-left mb-4 mr-4"
+                />
+                <img
+                    src="https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/3d923fcb-559c-44e7-80b4-2306b16f24c7.webp"
+                    alt=""
+                    class="float-left mb-4 mr-4"
+                />
+                <img
+                    src="https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/3d923fcb-559c-44e7-80b4-2306b16f24c7.webp"
+                    alt=""
+                    class="float-left mb-4 mr-4"
+                />
+                <img
+                    src="https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/3d923fcb-559c-44e7-80b4-2306b16f24c7.webp"
+                    alt=""
+                    class="float-left mb-4 mr-4"
+                />
+                <img
+                    src="https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/3d923fcb-559c-44e7-80b4-2306b16f24c7.webp"
+                    alt=""
+                    class="float-left mb-4 mr-4"
+                />
             </div>
         </div>
 
+        <hr class="my-24 border-t-4" />
 
-        <hr class="my-24 border-t-4">
-
-        <div class="container px-6 max-w-md mx-auto sm:max-w-xl lg:flex lg:max-w-full lg:p-0">
-            <div class="lg:p-12 lg:flex-1 xl:p-24">
-                <h3 class="text-4xl font-bold dark:text-slate-200">The <span class="text-pink-500">Asterisk</span> War</h3>
-                <img class="mt-4 rounded-xl shadow-md lg:hidden" src="https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/3d923fcb-559c-44e7-80b4-2306b16f24c7.webp" alt="" 
-                class="">
-                <h2 class="mt-6 text-2xl font-semibold dark:text-slate-200">The awarding Light Novel</h2>
-                <p class="mt-2 dark:text-slate-300">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem nihil autem quibusdam, quis ex dolores veritatis, natus inventore error optio odio. Laborum ullam aliquam consequuntur autem molestiae? Magni, quia harum!</p>
+        <div
+            class="container mx-auto max-w-md px-6 sm:max-w-xl lg:flex lg:max-w-full lg:p-0"
+        >
+            <div class="lg:flex-1 lg:p-12 xl:p-24">
+                <h3 class="text-4xl font-bold dark:text-slate-200">
+                    The <span class="text-pink-500">Asterisk</span> War
+                </h3>
+                <img
+                    class="mt-4 rounded-xl shadow-md lg:hidden"
+                    src="https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/3d923fcb-559c-44e7-80b4-2306b16f24c7.webp"
+                    alt=""
+                    class=""
+                />
+                <h2 class="mt-6 text-2xl font-semibold dark:text-slate-200">
+                    The awarding Light Novel
+                </h2>
+                <p class="mt-2 dark:text-slate-300">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Exercitationem nihil autem quibusdam, quis ex dolores
+                    veritatis, natus inventore error optio odio. Laborum ullam
+                    aliquam consequuntur autem molestiae? Magni, quia harum!
+                </p>
                 <div class="mt-4">
-                    <a class="inline-block px-5 py-3 dark:bg-slate-700 rounded-lg shadow-lg font-semibold" href="#">GET NOW!</a>
+                    <a
+                        class="inline-block rounded-lg px-5 py-3 font-semibold shadow-lg dark:bg-slate-700"
+                        href="#"
+                        >GET NOW!</a
+                    >
                 </div>
             </div>
             <div class="hidden lg:flex lg:w-1/2">
-                <img class="mt-4 rounded-xl shadow-md object-cover" src="https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/3d923fcb-559c-44e7-80b4-2306b16f24c7.webp" alt="" />
+                <img
+                    class="mt-4 rounded-xl object-cover shadow-md"
+                    src="https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/3d923fcb-559c-44e7-80b4-2306b16f24c7.webp"
+                    alt=""
+                />
             </div>
         </div>
 
-        <h2 class="mt-24 mb-10 text-center bold text-3xl text-slate-700 dark:text-slate-300">Gallery</h2>
+        <h2
+            class="bold mb-10 mt-24 text-center text-3xl text-slate-700 dark:text-slate-300"
+        >
+            Gallery
+        </h2>
 
-        <div class="container mx-auto px-6 sm:flex sm:flex-wrap sm:gap-6 sm:justify-evenly">
-            <div class="rounded shadow-lg overflow-hidden mb-10 sm:w-64">
-                <img class="w-full" src="https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/3d923fcb-559c-44e7-80b4-2306b16f24c7.webp" alt="">
+        <div
+            class="container mx-auto px-6 sm:flex sm:flex-wrap sm:justify-evenly sm:gap-6"
+        >
+            <div class="mb-10 overflow-hidden rounded shadow-lg sm:w-64">
+                <img
+                    class="w-full"
+                    src="https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/3d923fcb-559c-44e7-80b4-2306b16f24c7.webp"
+                    alt=""
+                />
                 <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2 text-slate-700 dark:text-slate-300">Image Title</div>
-                    <p class="text-small text-slate-600 dark:text-slate-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, impedit.</p>
+                    <div
+                        class="mb-2 text-xl font-bold text-slate-700 dark:text-slate-300"
+                    >
+                        Image Title
+                    </div>
+                    <p class="text-small text-slate-600 dark:text-slate-200">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Amet, impedit.
+                    </p>
                 </div>
             </div>
-            <div class="rounded shadow-lg overflow-hidden mb-10 sm:w-64">
-                <img class="w-full" src="https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/3d923fcb-559c-44e7-80b4-2306b16f24c7.webp" alt="">
+            <div class="mb-10 overflow-hidden rounded shadow-lg sm:w-64">
+                <img
+                    class="w-full"
+                    src="https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/3d923fcb-559c-44e7-80b4-2306b16f24c7.webp"
+                    alt=""
+                />
                 <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2 text-slate-700 dark:text-slate-300">Image Title</div>
-                    <p class="text-small text-slate-600 dark:text-slate-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, impedit.</p>
+                    <div
+                        class="mb-2 text-xl font-bold text-slate-700 dark:text-slate-300"
+                    >
+                        Image Title
+                    </div>
+                    <p class="text-small text-slate-600 dark:text-slate-200">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Amet, impedit.
+                    </p>
                 </div>
             </div>
-            <div class="rounded shadow-lg overflow-hidden mb-10 sm:w-64">
-                <img class="w-full" src="https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/3d923fcb-559c-44e7-80b4-2306b16f24c7.webp" alt="">
+            <div class="mb-10 overflow-hidden rounded shadow-lg sm:w-64">
+                <img
+                    class="w-full"
+                    src="https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/3d923fcb-559c-44e7-80b4-2306b16f24c7.webp"
+                    alt=""
+                />
                 <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2 text-slate-700 dark:text-slate-300">Image Title</div>
-                    <p class="text-small text-slate-600 dark:text-slate-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, impedit.</p>
+                    <div
+                        class="mb-2 text-xl font-bold text-slate-700 dark:text-slate-300"
+                    >
+                        Image Title
+                    </div>
+                    <p class="text-small text-slate-600 dark:text-slate-200">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Amet, impedit.
+                    </p>
                 </div>
             </div>
-            <div class="rounded shadow-lg overflow-hidden mb-10 sm:w-64">
-                <img class="w-full" src="https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/3d923fcb-559c-44e7-80b4-2306b16f24c7.webp" alt="">
+            <div class="mb-10 overflow-hidden rounded shadow-lg sm:w-64">
+                <img
+                    class="w-full"
+                    src="https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/3d923fcb-559c-44e7-80b4-2306b16f24c7.webp"
+                    alt=""
+                />
                 <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2 text-slate-700 dark:text-slate-300">Image Title</div>
-                    <p class="text-small text-slate-600 dark:text-slate-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, impedit.</p>
+                    <div
+                        class="mb-2 text-xl font-bold text-slate-700 dark:text-slate-300"
+                    >
+                        Image Title
+                    </div>
+                    <p class="text-small text-slate-600 dark:text-slate-200">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Amet, impedit.
+                    </p>
                 </div>
             </div>
-            <div class="rounded shadow-lg overflow-hidden mb-10 sm:w-64">
-                <img class="w-full" src="https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/3d923fcb-559c-44e7-80b4-2306b16f24c7.webp" alt="">
+            <div class="mb-10 overflow-hidden rounded shadow-lg sm:w-64">
+                <img
+                    class="w-full"
+                    src="https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/3d923fcb-559c-44e7-80b4-2306b16f24c7.webp"
+                    alt=""
+                />
                 <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2 text-slate-700 dark:text-slate-300">Image Title</div>
-                    <p class="text-small text-slate-600 dark:text-slate-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, impedit.</p>
+                    <div
+                        class="mb-2 text-xl font-bold text-slate-700 dark:text-slate-300"
+                    >
+                        Image Title
+                    </div>
+                    <p class="text-small text-slate-600 dark:text-slate-200">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Amet, impedit.
+                    </p>
                 </div>
             </div>
         </div>
 
-        <div class="container mx-auto mt-64 p-2 grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-4 md:p-4">
-            <h2 class="h-15 text-xl font-semibold dark:text-slate-300 md:col-start-4 md:row-start-2 md:flex"><span class="self-center">Welcome to Prose Realm</span>
+        <div
+            class="container mx-auto mt-64 grid grid-cols-2 gap-2 p-2 md:grid-cols-4 md:gap-4 md:p-4"
+        >
+            <h2
+                class="h-15 text-xl font-semibold dark:text-slate-300 md:col-start-4 md:row-start-2 md:flex"
+            >
+                <span class="self-center">Welcome to Prose Realm</span>
             </h2>
-            <div class="h-15 text-lg font-bold dark:text-slate-400 md:col-start-2 md:row-start-2 md:flex"><span class="self-end">@prose_realm</span></div>
+            <div
+                class="h-15 text-lg font-bold dark:text-slate-400 md:col-start-2 md:row-start-2 md:flex"
+            >
+                <span class="self-end">@prose_realm</span>
+            </div>
 
             <div class="grid-card group">
-                <div class="w-full h-full bg-[url('https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/3d923fcb-559c-44e7-80b4-2306b16f24c7.webp')] bg-cover absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12"></div>
+                <div
+                    class="absolute h-full w-full bg-[url('https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/3d923fcb-559c-44e7-80b4-2306b16f24c7.webp')] bg-cover transition-all duration-500 group-hover:rotate-12 group-hover:scale-125"
+                ></div>
             </div>
-            <div class="group grid-card md:col-start-3">
-                <div class="w-full h-full bg-[url('https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/c865ed9f-cf76-4755-b6b0-aafae94fc37d.webp')] bg-cover absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12"></div>
-            </div>
-            <div class="grid-card group">
-                <div class="w-full h-full bg-[url('https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/7a1005e0-4c1f-4bfc-aa4b-fdb09fb15009.webp')] bg-cover absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12"></div>
-            </div>
-            <div class="grid-card group">
-                <div class="w-full h-full bg-[url('https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/a0475bb8-4cd1-48b8-853e-7d9b73ca1553.webp')] bg-cover absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12"></div>
+            <div class="grid-card group md:col-start-3">
+                <div
+                    class="absolute h-full w-full bg-[url('https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/c865ed9f-cf76-4755-b6b0-aafae94fc37d.webp')] bg-cover transition-all duration-500 group-hover:rotate-12 group-hover:scale-125"
+                ></div>
             </div>
             <div class="grid-card group">
-                <div class="w-full h-full bg-[url('https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/c115fb37-ea18-4439-ade3-17428c38ec91.jpg')] bg-cover absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12"></div>
-            </div>
-            <div class="group grid-card md:col-start-2">
-                <div class="w-full h-full bg-[url('https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/236c9943-dff5-4535-a792-a9846be19489.webp')] bg-cover absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12"></div>
-            </div>
-            <div class="group grid-card md:col-start-4">
-                <div class="w-full h-full bg-[url('https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/a8bb8f73-54ff-4158-a9ea-d77cb7c18a63.webp')] bg-cover absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12"></div>
+                <div
+                    class="absolute h-full w-full bg-[url('https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/7a1005e0-4c1f-4bfc-aa4b-fdb09fb15009.webp')] bg-cover transition-all duration-500 group-hover:rotate-12 group-hover:scale-125"
+                ></div>
             </div>
             <div class="grid-card group">
-                <div class="w-full h-full bg-[url('https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/11bae635-7f45-43ae-ac01-55f3a817d85f.jpg')] bg-cover absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12"></div>
+                <div
+                    class="absolute h-full w-full bg-[url('https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/a0475bb8-4cd1-48b8-853e-7d9b73ca1553.webp')] bg-cover transition-all duration-500 group-hover:rotate-12 group-hover:scale-125"
+                ></div>
             </div>
-            <div class="group grid-card md:col-start-3">
-                <div class="w-full h-full bg-[url('https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/c2de7ae1-1a38-4966-b10a-25077e067954.webp')] bg-cover absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12"></div>
+            <div class="grid-card group">
+                <div
+                    class="absolute h-full w-full bg-[url('https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/c115fb37-ea18-4439-ade3-17428c38ec91.jpg')] bg-cover transition-all duration-500 group-hover:rotate-12 group-hover:scale-125"
+                ></div>
             </div>
-            <div class="group grid-card md:col-start-3">
-                <div class="w-full h-full bg-[url('https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/2358f10d-c6d9-49c4-8275-a3931d218db9.webp')] bg-cover absolute group-hover:scale-125 transition-all duration-500 group-hover:rotate-12"></div>
+            <div class="grid-card group md:col-start-2">
+                <div
+                    class="absolute h-full w-full bg-[url('https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/236c9943-dff5-4535-a792-a9846be19489.webp')] bg-cover transition-all duration-500 group-hover:rotate-12 group-hover:scale-125"
+                ></div>
+            </div>
+            <div class="grid-card group md:col-start-4">
+                <div
+                    class="absolute h-full w-full bg-[url('https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/a8bb8f73-54ff-4158-a9ea-d77cb7c18a63.webp')] bg-cover transition-all duration-500 group-hover:rotate-12 group-hover:scale-125"
+                ></div>
+            </div>
+            <div class="grid-card group">
+                <div
+                    class="absolute h-full w-full bg-[url('https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/11bae635-7f45-43ae-ac01-55f3a817d85f.jpg')] bg-cover transition-all duration-500 group-hover:rotate-12 group-hover:scale-125"
+                ></div>
+            </div>
+            <div class="grid-card group md:col-start-3">
+                <div
+                    class="absolute h-full w-full bg-[url('https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/c2de7ae1-1a38-4966-b10a-25077e067954.webp')] bg-cover transition-all duration-500 group-hover:rotate-12 group-hover:scale-125"
+                ></div>
+            </div>
+            <div class="grid-card group md:col-start-3">
+                <div
+                    class="absolute h-full w-full bg-[url('https://s3.ventustium.com/prose-realm/lightnovel/series/volume/cover/2358f10d-c6d9-49c4-8275-a3931d218db9.webp')] bg-cover transition-all duration-500 group-hover:rotate-12 group-hover:scale-125"
+                ></div>
             </div>
         </div>
 
         <h1>Hello</h1>
-        
+
         <div class="mb-96"></div>
 
         <script>
-            const checkbox = document.querySelector('#toggle');
-            const html = document.querySelector('html');
-            
-            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                checkbox.checked = true
-                html.classList.add ('dark')
+            const checkbox = document.querySelector("#toggle");
+            const html = document.querySelector("html");
+
+            if (
+                window.matchMedia &&
+                window.matchMedia("(prefers-color-scheme: dark)").matches
+            ) {
+                checkbox.checked = true;
+                html.classList.add("dark");
             }
 
-            checkbox.addEventListener('click', function () {
-                checkbox.checked ? html.classList.add ('dark') : html.classList.remove ('dark')
-            })
+            checkbox.addEventListener("click", function () {
+                checkbox.checked
+                    ? html.classList.add("dark")
+                    : html.classList.remove("dark");
+            });
         </script>
     </body>
 </html>
