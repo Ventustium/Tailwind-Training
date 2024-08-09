@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-#toggle:checked ~ label div.toggle-circle {
-    @apply translate-x-3;
+@layer base {
+    h1 {
+        /* font-size: 3rem; */
+        @apply text-4xl
+    }
+}
+
+@layer components {
+    .grid-card {
+        @apply aspect-[2/3] rounded-lg overflow-hidden relative hover:scale-95 transition-all duration-200;
+    }
+}
+
+@layer utilities {
+    #toggle:checked ~ label div.toggle-circle {
+        @apply translate-x-3;
+    }
 }
